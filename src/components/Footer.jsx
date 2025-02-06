@@ -20,6 +20,19 @@ export default function Footer() {
           <h2>
             Email: <br /> luxoraliving@gmail.com
           </h2>
+          <p className="font-bold border-t border-black pt-1">
+            This Website is made by Mridul Giri.
+            <a
+              href="https://x.com/mridulgiri_"
+              target="_blank"
+              className="mx-2"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mridul-giri" target="_blank">
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+          </p>
         </div>
       </div>
     </div>
