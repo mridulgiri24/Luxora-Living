@@ -7,7 +7,7 @@ export default {
         workSans: ["Work Sans", "sans-serif"],
       },
       colors: {
-        background1: "#FAF7F0",
+        background1: "#f4f1ec",
         background2: "#F5EEE6",
         textColor1: "#3C3D37",
         textColor2: "#181C14",

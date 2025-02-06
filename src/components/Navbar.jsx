@@ -1,64 +1,17 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <>
-      {/* Navbar */}
-      <nav className="p-3">
-        <div className="flex max-w-screen-xl mx-auto justify-between items-center">
-          {/* Website Name */}
-          <Link
-            to="/"
-            className="font-extrabold text-textColor2 flex justify-center items-start"
-          >
-            <img className="w-16" src="/src/assets/home-page/brand-img.png" />{" "}
-            &nbsp; &nbsp;Luxora <br />
-            &nbsp; &nbsp;Living
-          </Link>
-          {/* navbar menu */}
-          <div>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `text-xl hover:text-textColor2 hover:font-bold ${
-                  isActive
-                    ? "font-bold text-textColor2"
-                    : "font-semibold text-textColor"
-                }`
-              }
-            >
-              Home
-            </NavLink>
-
-            <NavLink
-              to="/property"
-              className={({ isActive }) =>
-                `pl-20 text-xl hover:text-textColor2 hover:font-bold ${
-                  isActive
-                    ? "font-bold text-textColor2"
-                    : "font-semibold text-textColor"
-                }`
-              }
-            >
-              Property
-            </NavLink>
-
-            <NavLink
-              to="/agents"
-              className={({ isActive }) =>
-                `pl-20 text-xl hover:text-textColor2 hover:font-bold ${
-                  isActive
-                    ? "font-bold text-textColor2"
-                    : "font-semibold text-textColor"
-                }`
-              }
-            >
-              Agents
-            </NavLink>
-          </div>
-        </div>
-      </nav>
-    </>
+    <div className="pt-11 px-3 sm:px-9 ">
+      <div
+        className="pb-2 flex justify-center
+      sm:items-center border-b border-black"
+      >
+        <Link to="/" className="font-medium text-black">
+          L U X O R A L I V I N G
+        </Link>
+      </div>
+    </div>
   );
 }

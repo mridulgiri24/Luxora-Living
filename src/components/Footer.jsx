@@ -1,46 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import footer1 from "../assets/footer1.jpg";
 
 export default function Footer() {
   return (
-    <div>
-      <div className="flex justify-evenly items-center p-10 text-white bg-textColor1 mt-44 border-white">
-        <div className="w-full p-10 border-r border-white">
-          <Link to="/" className="font-extrabold flex  items-start mb-6">
-            <img className="w-20" src="/src/assets/home-page/brand-img.png" />{" "}
-            &nbsp; &nbsp;Luxora <br />
-            &nbsp; &nbsp;Living
-          </Link>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-          laudantium voluptate optio eaque esse, rem ipsum dolor, quod
-          blanditiis quaerat magnam temporibus inventore aliquid veniam laborum
-          hic, sint laboriosam accusamus? <br />
-          <br />
-          <span className="text-xl font-medium">+(123) 456-7890</span>
+    <div className="flex flex-col p-5 mt-12 sm:p-9">
+      <h1 className="text-5xl sm:text-6xl">Do you have questions?</h1>
+      <h2 className="text-3xl sm:text-4xl mt-5">Contact Us</h2>
+      <div className="flex flex-col sm:flex-row mt-10">
+        <img className="w-full sm:w-[40%]" src={footer1} />
+        <div className="flex flex-col justify-center gap-5 mt-10 sm:mt-0 sm:ml-10 text-xl">
+          <p className="font-medium text-2xl">
+            "Our vision is to be the most trusted and respected real estate
+            agency in Whelton."
+          </p>
+          <h1>
+            Phone: <br />
+            (123) 456-7890
+          </h1>
+          <h2>
+            Email: <br /> luxoraliving@gmail.com
+          </h2>
         </div>
-        <div className="w-full p-10">
-          <span className="mx-4 font-semibold text-xl">Follow Us:</span>
-          <br />
-          <br />
-          <i className="fa-brands fa-instagram mx-4 text-3xl cursor-pointer"></i>
-          <i className="fa-brands fa-facebook mx-4 text-3xl cursor-pointer"></i>
-          <i className="fa-brands fa-square-x-twitter mx-4 text-3xl cursor-pointer"></i>
-          <i className="fa-brands fa-youtube mx-4 text-3xl cursor-pointer"></i>
-        </div>
-      </div>
-
-      {/* Developed by Mridul Giri */}
-      <div className="font-semibold text-xl text-center p-6  text-white bg-textColor1">
-        Developed By: Mridul Giri &rarr;
-        <a href="https://www.linkedin.com/in/mridul-giri/" target="_blank">
-          <i className="fa-brands fa-linkedin-in ml-4"></i>{" "}
-        </a>
-        <a
-          href="https://x.com/_thmridul?t=jTcTgR1R_qtAAnhQatB7oA&s=08"
-          target="_blank"
-        >
-          <i className="fa-brands fa-square-x-twitter ml-1"></i>
-        </a>
       </div>
     </div>
   );
